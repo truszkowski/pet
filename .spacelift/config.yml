@@ -9,7 +9,7 @@ tests:
     environment:
       TF_VAR_length: 4
       
-  - name: Test the module with length=0
+  - name: Test the module with length=-1
     negative: true
     environment:
       TF_VAR_length: -1
