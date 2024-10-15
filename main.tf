@@ -1,6 +1,11 @@
 variable length {
   type = number
   default = 1
+  
+  validation {
+    condition     = var.length > 0
+    error_message = "length must be greater than 0"
+  }
 }
 
 resource random_pet cat {
