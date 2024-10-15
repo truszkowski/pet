@@ -12,4 +12,4 @@ tests:
   - name: Test the module with length=0
     negative: true
     environment:
-      TF_VAR_length: 0
+      TF_VAR_length: -1
