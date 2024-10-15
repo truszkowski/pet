@@ -1,0 +1,15 @@
+version: 1
+module_version: 0.0.1
+
+test_defaults:
+  before_init: ["echo hello"]
+
+tests:
+  - name: Test the module with length=4
+    environment:
+      TF_VAR_length: 4
+      
+  - name: Test the module with length=0
+    negative: true
+    environment:
+      TF_VAR_length: 0
